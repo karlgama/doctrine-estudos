@@ -16,8 +16,9 @@ class Telefone
      * @Column(type="integer")
      */
     private int $id;
+
     /**
-     * @Column(type="string", lenght="20")
+     * @Column(type="string", length=20)
      */
     private string $numero;
     /**

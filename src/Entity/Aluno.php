@@ -20,15 +20,15 @@ class Aluno
      * @Column(type="integer")
      */
     private int $id;
-    
+
     /**
      * @var string
      * @Column (type="string")
      */
     private string $nome;
-
+    //usando o cascade podemos falar para inserir e remover os telefones sempre que criarem um aluno
     /**
-     * @OneToMany(targetEntity="Telefone", mappedBy="aluno")
+     * @OneToMany(targetEntity="Telefone", mappedBy="aluno",cascade={"remove","persist"})
      */
     private $telefones;
 
