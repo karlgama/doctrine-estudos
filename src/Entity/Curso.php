@@ -64,7 +64,7 @@ class Curso
             return $this;
         }
         $this->alunos->add($aluno);
-        $aluno->addCurso($aluno);
+        $aluno->addCurso($this);
         return $this;
 
     }
