@@ -92,7 +92,7 @@ class Aluno
     }
 
     /**
-     * @return ArrayCollection
+     * @return Curso[]
      */
     public function getCursos(): ArrayCollection
     {
